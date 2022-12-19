@@ -2,6 +2,8 @@ import React,{useState} from 'react';
 import "./signup.css";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../Firebase/Firebase";
+import { db } from '../Firebase/Firebase';
+import { addDoc , collection } from 'firebase/firestore';
 import { v4 as uuidv4 } from 'uuid';
 import { NavLink, useNavigate } from "react-router-dom";
 import { getDatabase, ref, set } from 'firebase/database';
@@ -56,19 +58,17 @@ function SignUp() {
         
         });
       
-        const db = getDatabase();
-        set(ref(db, 'Users/' + uuidv4), {
-          username: name,
-          email: email,
-          password: pass
-        }).then(() => {
-          alert( "Data added successfully!")
+        addDoc(collection(db, "User"), { user })
+        .then(() => {
+          setBtnDisable(false);
+          alert("Blog Added Successfully");
           Navigate("/home");
-         })
-         .catch((err) => {
-          alert(err.message);
-          console.log(err);
-         });
+        })
+        .catch((err) => {
+          console.log("ERROR", err);
+          setErrMsg(err.message);
+          setBtnDisable(false);
+        });
   
  
     }
