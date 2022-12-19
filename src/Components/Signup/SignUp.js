@@ -67,6 +67,7 @@ function SignUp() {
          })
          .catch((err) => {
           alert(err.message);
+          console.log(err);
          });
   
  
