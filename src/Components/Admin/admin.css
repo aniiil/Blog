@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+}
+
+
+.body3{
+    background-image: url("../Img/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+ }
+ .logo2{
+    font-family: 'Zen Dots', cursive;
+    padding-left: 25px;
+    padding-top: 25px;
+    color: black;
+}
+.header{
+    text-align: center;
+    font-family: 'Zen Dots', cursive;
+    margin-top: 45px;
+
+}
+ .signup-box{
+    display: flex;
+   padding-top: 25px;
+   
+ }
+ .right-box{
+    display: flex;
+    flex: 1;
+ }
+
+.form-container2{
+   display: flex;
+   flex: 1;
+    justify-content:flex-start;
+    align-items: center; 
+    height: 100%;
+}
+.line2{
+    /* border-left: 3px solid rgb(168, 152, 152); */
+    border-left: 3px solid rgb(168, 152, 152);
+    height: 470px;
+    margin-right: 70px;
+    margin-left: 5px;
+    border-radius: 50px;
+}
+
+
+
+.form-data{
+    display: flex;
+    flex-direction: column;
+     padding: 15px 25px;
+     width: 60%;
+
+    }
+
+.form-data input:focus{
+    border: 2px solid #116DFF;
+    border-radius: 25px;
+}
+.form-data input{
+    margin-bottom: 25px;
+    padding: 6px 0;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent !important;
+    border-bottom: 1px solid rgb(43, 42, 42);
+
+}
+.submit2{
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+   
+}
+
+.form-btn:disabled{
+    background-color: rgb(169, 157, 157);
+    color: #000;
+   
+
+}
+.form-btn{
+    font-family: 'Zen Dots', cursive;
+    cursor: pointer;
+    max-width: 130px;
+    padding: 10px 32px;
+    font-size: 18px;
+    border-radius: 25px;
+    color:whitesmoke ;
+    font-weight: 400;
+    border: none;
+    outline: none;
+     background-color: #116DFF;
+}
+.form-btn:hover{
+    color: #116DFF;
+    background-color: whitesmoke;
+    border: 1px solid #116DFF;
+    transition: 0.5s ease;
+}
+
+.logtext2{
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.err-msg{
+    font-size: 14px;
+    color: rgb(211, 27, 27);
+    text-align: center;
+    margin-bottom: 5px;
+}
