@@ -5,7 +5,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { NavLink, useNavigate } from "react-router-dom";
 
 
-function LogIn() {
+const LogIn=()=> {
     
   const Navigate = useNavigate();
 

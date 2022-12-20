@@ -1,7 +1,7 @@
 import React from 'react'
 import  "./page.css"
 import { NavLink } from 'react-router-dom';
-function LandingPage() {
+const LandingPage=()=> {
   return (
     <><div className="body-box">
      <h1 className="logo">MyBlog</h1>

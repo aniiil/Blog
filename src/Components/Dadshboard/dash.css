@@ -1,17 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.dashboard-bg {
+  background-image: url(../Img/dash2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.user-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  margin: 25px;
+}
+.table-head {
+  padding: 0 15px;
+  font-family: "Zen Dots", cursive;
+  color: rgb(80, 58, 42);
+  border-bottom: 3px solid rgb(73, 59, 40);
+  margin-bottom: 25px;
+}
+.table-box{
+   background-color: rgba(222, 184, 135, 0.532); 
+   /* padding: 15px; */
+   border-radius: 5px;
+   min-width: 700px;
+  border: 3px solid rgb(137, 105, 63);
+  border-spacing: 0 !important;
+
 
 }
-a{
-    text-decoration: none;
+
+  .upper-tab th{
+  font-family: "Zen Dots", cursive;
+  padding:  8px ;
+  border-left: 3px solid rgb(137, 105, 63) ;
+  border-bottom: 3px solid rgb(137, 105, 63) ;
+
 }
-.dashboard-bg{
-    background-image: url(../Img/dash2.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+
+
+.num {
+  text-align: center;
+  width: 55px;
+  border-left: none !important;
+}
+td {
+  text-align: center;
+  padding: 8px 0;
+  border-left: 3px solid rgb(137, 105, 63) ;
 }

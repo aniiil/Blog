@@ -24,13 +24,13 @@ a {
   font-weight: 500;
   border: none;
   outline: none;
+  color: rgb(137, 105, 63);
+  border: 3px solid rgb(137, 105, 63);
+  background-color: rgb(209, 178, 137)
+}
+.nav-link:hover {
+  background-color: rgb(209, 178, 137);
   color: burlywood;
   border: 3px solid burlywood;
   background-color: rgb(137, 105, 63);
-}
-.nav-link:hover {
-  color: rgb(137, 105, 63);
-  transition: 0.5s ease;
-  border: 3px solid rgb(137, 105, 63);
-  background-color: rgb(209, 178, 137);
 }

@@ -5,7 +5,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import Nav from "../Navbar/Nav";
 
-function AddBlog() {
+const AddBlog=()=> {
   const [addBlog, setAddBlog] = useState({
     name: "",
     title: "",
@@ -43,7 +43,7 @@ function AddBlog() {
   };
   return (
     <>
-      <Nav btn="Add BLog" btn2="Veiw Blog" />
+        <Nav btn="Add BLog" btn2="Veiw Blog" btn3="Signup/Login" path="/addBlog" path2="/home" path3="/signup" />
 
       <div className="product-bg">
         <section className="add-form-box ">

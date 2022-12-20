@@ -1,7 +1,7 @@
 import React from "react";
 import "./nav.css";
 import { NavLink } from "react-router-dom";
-function Nav(props) {
+const  Nav=(props) =>{
   return (
     <>
       <div className="navbar">
@@ -10,11 +10,14 @@ function Nav(props) {
         </div>
         <div className="right-div">
           <div className="r-link">
-            <NavLink className="nav-link " to="/addBlog">
+            <NavLink className="nav-link " to={props.path}>
               {props.btn}
             </NavLink>
-            <NavLink className="nav-link " to="/home">
+            <NavLink className="nav-link " to={props.path2}>
               {props.btn2}
+            </NavLink> 
+            <NavLink className="nav-link " to={props.path3}>
+              {props.btn3}
             </NavLink>
           </div>
         </div>
